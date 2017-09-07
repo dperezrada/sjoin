@@ -37,7 +37,7 @@ option_2="1"
 OPTIND=1 # Reset is necessary if getopts was used previously in the script.  It is a good idea to make this local in a function.
 while getopts "a:e:ij:o:t:v:1:2:c:hz" opt; do
     case "$opt" in
-        a)  a_option="-a$OPTARG"
+        a)  a_option="${a_option} -a$OPTARG"
             ;;
         e)  e_option="-e"
             ;;
