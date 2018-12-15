@@ -5,11 +5,11 @@
 	sjoin -1 2 -2 2 -t$'\t' -o'1.1,2.1,1.2,2.2'  ./example/a ./example/b
 
 ## Install
+	cd /tmp
 	git clone git@github.com:dperezrada/sjoin.git
-	#create symbolic link
-	ln -s <ABPATH>/sjoin /usr/local/bin
-	#or copy
-	copy sjoin /usr/local/bin
+	cd sjoin
+	sudo cp sjoin /usr/local/bin
+	sudo chmod +x /usr/local/bin/sjoin
 
 Make sure you have the PATH un your profile
 
